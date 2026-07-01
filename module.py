@@ -351,9 +351,501 @@
 #     product=product*i
 # print(f"the factorial of {n} is {product}")
 
-n=int(input("enter your number:",))
+# def avg():
+#     a=int(input("enter your 1st number:",))
+#     b=int(input("enter your 2nd number:",))
+#     c=int(input("enter your 3rd number:",))
 
-for i in range(1,n+1):
-    print(" " * (n-i), end="")
-    print("*" * (2*i-1), end="")
-    print("")
+
+#     average=(a+b+c)/3
+
+#     print(average)
+
+# avg()
+# print("i love you vansh")
+# avg()
+# avg()
+# avg()
+# avg()
+
+
+
+# def goodDay(name , ending):
+#     print("good day"+" "+ name )
+#     print(ending)
+
+
+
+# goodDay("vansh" , "thank you")
+
+# def goodDay(name , ending):
+#     print("good day"+" "+ name )
+#     print(ending)
+#     return "done"
+
+
+
+# a=goodDay("vansh" , "thank you")
+# print(a)
+
+
+# def factorial(n):
+#     if(n==1 or n==0):
+#         return 1
+#     return n * factorial(n-1)
+
+
+
+# n=int(input("enter your number:",))
+
+# print(f"the factorial of this number is : {factorial(n)}")
+
+# a=1
+# b=2
+# c=4
+
+# def greatest(a,b,c):
+#     if(a>b and a>c):
+#         return a
+#     elif(b>a and b>c):
+#         return b
+#     elif(c>a and c>b):
+#         return c
+    
+
+# print(greatest(a,b,c))
+
+
+
+
+# def f_to_c(f):
+#     return 5*(f-32)/9
+
+
+# f=int(input("enter temp in f:",))
+# print(f"{round (f_to_c(f))} °c")
+
+
+# print("a")
+# print("b")
+# print("c", end="")
+# print("d", end="")
+
+
+
+# def sum(n):
+#     if(n==1):
+#         return 1
+
+#     return sum(n-1) + n
+# print(sum(9))
+# a="i"
+# b="love"
+# c="you"
+# d="***"
+
+# me=(a+" "+b+" "+c+","+d)
+# print(me)
+
+# f=open("file.txt")
+# data=f.read()
+# print(data)
+# f.close()
+
+# st="this is a real world programmng"
+
+
+# f=open("vansh.txt","w")
+# f.write(st)
+# f.close()
+# f=open("file.txt")
+# lines=f.readlines()
+# print(lines)
+# f.close()
+
+# f=open("file.txt")
+# line1=f.readlines()
+# print(line1,type(line1))
+
+# line2=f.readlines()
+# print(line2)
+
+# line3=f.readlines()
+# print(line3)
+
+
+# f.close()
+
+# f=open("file.txt")
+# line=f.readline()
+# while(line!=""):
+#     print(line)
+#     line=f.readline()
+
+# str="good morning vansh"
+# f=open("file.txt","a")
+# f.write(str)
+# f.close()
+
+# with open ("file.txt") as f:
+#     print(f.read())
+# f=open("poem.txt")
+# content=f.read()
+
+# if("twinkle" in content):
+#     print("twinkle is present in content")
+
+
+
+# f.close()
+# import random
+
+# def game():
+#     print("you are playing the game..")
+#     score=random.randint(1,62)
+#     with open("highscore.txt") as f:
+#         highscore=f.read()
+#     print(f"your score: {score}")
+    
+#     if(score>highscore or highscore==""):
+
+
+
+#         return score
+
+
+# game()
+
+# for i in range(2,21):
+# class Employee():
+#     name="vansh"
+#     language="python"
+#     salary=5000000
+
+
+# vansh=Employee()
+# print(vansh.name,vansh.language)
+
+
+   
+# class Employee():
+#     language="python"
+#     salary=5000000
+
+
+# vansh=Employee()
+# vansh.name="vanshuuu"
+# print(vansh.salary,vansh.language,vansh.name)
+
+# sahil=Employee()
+# sahil.name="programmer"
+# print(sahil.salary,sahil.language,sahil.name)
+
+
+# class Employee():
+#     language="python"
+#     salary=5000000
+ 
+
+#     def getInfo(self):
+#         print(f"the language is{self.language}. the salary is {self.salary}")
+#     @staticmethod
+#     def greet(self):
+#         print("good morning baby")
+# vansh=Employee()
+# vansh.name="vanshuuu"
+# # print(vansh.salary,vansh.language,vansh.name)
+
+
+
+# vansh.getInfo()
+# # Employee.getInfo(vansh)  
+# vansh.greet()  
+
+
+# class Employee():
+#     language="python"
+#     salary=5000000
+
+#     def __init__(self,name,language,salary):
+#         self.name=name
+#         self.language=language
+#         self.salary=salary
+#         print("i am crating an object")
+
+    
+ 
+
+#     def getInfo(self):
+#         print(f"the language is{self.language}. the salary is {self.salary}")
+#     @staticmethod
+#     def greet(self):
+#         print("good morning baby")
+# vansh=Employee("arun","python",2000000)
+# # vansh.name="vanshuuu"
+# print(vansh.salary,vansh.language,vansh.name)
+
+
+
+# # vansh.getInfo()
+# # # Employee.getInfo(vansh)  
+# # vansh.greet()  
+# class Programmer():
+#     company="Microsoft"
+#     def __init__(self,name,salary,pin):
+#         self.name=name
+#         self.salary=salary
+#         self.pin=pin
+class Employee:
+    company="TCS"
+    def show(self):
+        print(f"the name is {self.name}. The salary is {self.salary}")
+
+
+# class Programmer:
+#     company="INFOSYS"
+#     def show(self):
+#         print(f"the name is {self.name}. The salary is {self.salary}")
+
+
+    #    def showLanguage(self):
+#         print(f"the name is {self.name} and he is good with {self.language} language")
+
+
+# class Programmer(Employee):
+#     company="infosys"
+#     def showLanguage(self):
+#         print(f"the name is {self.name} and he is good with {self.language} language")
+
+#     a=Employee()
+#     b=Programmer()
+
+#     print(a.company,b.company)
+
+
+# class Employee:
+#     def __init__(self):
+#         print("Constructor of Employee")
+#     a=1
+
+# class Programmer(Employee):
+#     def __init__(self):
+#         print("Constructor of Programmer")
+#     b=2
+
+
+# class Manager(Programmer):
+#     def __init__(self):
+#         super().__init__()
+#         print("Constructor of Manager")
+#     c=3
+
+
+
+# # o=Employee()
+# # print(o.a)
+# # o=Programmer()
+# # print(o.a,o.b)
+# o=Manager()
+# print(o.a,o.b,o.c)
+
+# class Employee:
+#     a=1
+#     @classmethod
+#     def show(cls):
+#         print(f"The class value of a is  {cls.a}")
+
+# e=Employee()
+# e.a=69
+
+# e.show()
+
+
+
+# class Employee:
+#     a=1
+#     @classmethod
+#     def show(cls):
+#         print(f"The class value of a is  {cls.a}")
+
+
+
+
+#     @property
+#     def name(self):
+#         return f"{self.fname} {self.lname}"
+
+
+#     @name.setter
+#     def name(self,value):
+#         self.fname=value.split(" ")[0]
+#         self.lname=value.split(" ")[1]
+        
+
+
+
+
+
+# e=Employee()
+# e.a=69
+
+
+# e.name="vansh soni"
+# print(e.name)
+
+# e.show()
+
+# class Number:
+#     def __init__(self,n):
+#         self.n=n
+
+
+#     def __add__(self,num):
+#         return self.n + num.n
+
+
+
+# n=Number(1)
+# m=Number(2)
+
+
+# print(n+m)
+# def generateTable(n):
+#     table=""
+#     for i in range(1,11):
+#         table+=f"{n} x {i} = {n*i}\n"
+
+#         with open(f"tables/table_{n}" , "w") as f:
+#             f.write(table)
+
+# for i in range(2,21):
+#     generateTable(i)
+
+# word="Donkey"
+
+# with open ("read.txt" , "r") as f:
+#     content=f.read()
+
+
+
+# contentNew= content.replace(word,"######") 
+# with open ("read.txt" , "w") as f:
+#     f.write(contentNew)
+
+
+# with open ("this.txt") as f:
+#     content=f.read()
+
+
+# with open ("this_copy.txt" , "w") as f:
+#     f.write(content)
+
+
+
+
+
+# a=Calculator(4)
+# a.square()
+# a.cube()
+# a.squareroot()
+
+# class Demo:
+#     a=4
+
+# o=Demo()
+# o.a=0
+# @staticmethod
+# def hello():
+#     print("hello world")
+
+# print(o.a)
+# hello()
+
+# print("hello world")
+# class TwoDVector:
+#     def __init__(self, i, j):
+#         self.i=i
+#         self.j=j
+
+
+
+#     def show(self):
+#         print(f"the vector is {self.i}i + {self.j}j")
+
+# class ThreeDVector(TwoDVector):
+#    def __init__(self, i, j, k):
+#         super().__init__(i,j)
+#         self.k=k
+
+#    def show(self):
+#         print(f"the vector is {self.i}i + {self.j}j + {self.k}k")
+
+        
+# a=TwoDVector(1,2)
+# a.show()
+# b=ThreeDVector(1,2,3)
+# b.show()
+
+# 
+# class Animals:
+#     pass
+
+# class Pets(Animals):
+#     pass
+
+
+# class Dog(Pets):
+
+
+#     @staticmethod
+#     def bark():
+#         print("bow bow!")
+
+
+# d=Dog()
+# d.bark()
+
+
+# class Employee:
+#     salary = 300001
+#     increment=40
+
+#     @property
+#     def salaryafterincrement(self):
+#         return (self.salary + self.salary * (self.increment/100))
+
+# e=Employee()
+# print(e.salaryafterincrement)
+
+class Vector:
+    def __init__(self,x,y,z):
+        self.x=x
+        self.y=y
+        self.z=z
+
+
+    def _add_(self,other):
+        result=Vector(self.x +other.x , self.y + other.y , self.z +other.z)
+        return result
+    
+    def __mul__(self,other):
+        result=self.x *other.x , self.y * other.y , self.z *other.z
+        return result
+
+
+
+    def __str__(self):
+        return f"Vector({self.x} , {self.y} , {self.z})"
+    
+
+
+v1=Vector(1,2,3)
+v2=Vector(4,5,6)
+v3=Vector(7,8,9)
+
+print(v1 + v2)
+print(v1 * v2)
+
+print(v1 + v3)
+print(v1 * v3)
+        
